@@ -9,49 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a12bcdcb-1d22-4e26-8cc1-918bdaba0db9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/MineClone_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lwjgl.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SimpleJGL.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/Renderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/Utils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/demos/life/LifeScene.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/demos/life/init.glsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/demos/life/life.glsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/demos/life/set.glsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/demos/mandelbrot/MandelbrotScene.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/demos/mandelbrot/draw.frag" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/demos/raymarching/raymarch.glsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/io/InputListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/matricies/Matrix2f.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/matricies/Matrix3f.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/matricies/Matrix4f.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/rendering/FrameBuffer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/rendering/Scene.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/rendering/VAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/rendering/VBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/rendering/shaders/ComputeShader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/rendering/shaders/Shader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/rendering/shaders/display.frag" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/rendering/shaders/display.geom" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/rendering/shaders/display.vert" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/rendering/textures/ColorTexture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/rendering/textures/Texture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/rendering/textures/test.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/vectors/Vector2f.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/vectors/Vector2i.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/vectors/Vector3f.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/vectors/Vector3i.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/vectors/Vector4f.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/vectors/Vector4i.java" afterDir="false" />
+    <list default="true" id="a12bcdcb-1d22-4e26-8cc1-918bdaba0db9" name="Changes" comment="The creation of the main functionality and 2 demos">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,6 +121,14 @@
       <option name="presentableId" value="Default" />
       <updated>1662126266906</updated>
     </task>
+    <task id="LOCAL-00001" summary="The creation of the main functionality and 2 demos">
+      <created>1663176725857</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1663176725857</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -174,5 +141,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="The creation of the main functionality and 2 demos" />
+    <option name="LAST_COMMIT_MESSAGE" value="The creation of the main functionality and 2 demos" />
   </component>
 </project>
