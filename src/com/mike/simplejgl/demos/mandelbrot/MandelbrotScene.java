@@ -18,18 +18,19 @@ public class MandelbrotScene implements Scene, InputListener {
     private final Texture display;
     private final Vector2i windowResolution;
     private final Runnable close;
-    private final Vector3f coord = new Vector3f(-0.16f, 1.0405f, 0.026f);
+    private final Vector3f coord = new Vector3f(0, 0, 1);
     private boolean drag = false;
-    private int iterations = 500;
+    private int iterations;
 
-    public MandelbrotScene(Renderer renderer, Vector2i resolution) {
-        this.display = new ColorTexture(resolution, new Vector4f(1));
+    public MandelbrotScene(Renderer renderer, int iterations) {
         windowResolution = renderer.getWindowResolution();
+        this.iterations = iterations;
+        this.display = new ColorTexture(windowResolution, new Vector4f(1));
         Shader.deleteShader(renderer.setPostprocessing(Shader.loadFragmentShader(Utils.getInternalFile("/com/mike/simplejgl/demos/mandelbrot/draw.frag")), (shader, display) -> {
             shader.loadUniform("u_resolution", new Vector2f(display.width, display.height));
             shader.loadUniform("u_time", (float) renderer.getTime());
             shader.loadUniform("coord", coord);
-            shader.loadUniform("iterations", iterations);
+            shader.loadUniform("iterations", this.iterations);
         }));
         renderer.setScene(this);
         renderer.addInputListener(this);
@@ -44,6 +45,11 @@ public class MandelbrotScene implements Scene, InputListener {
     @Override
     public Texture getDisplay() {
         return display;
+    }
+
+    @Override
+    public void destroy() {
+        display.destroy();
     }
 
     @Override

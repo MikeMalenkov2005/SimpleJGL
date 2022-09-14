@@ -1,6 +1,8 @@
 #version 450 core
 layout(local_size_x = 8, local_size_y = 8, local_size_z = 1) in;
 layout(rgba32f, binding = 0) uniform image2D grid;
+uniform vec3 deadColor;
+uniform vec3 aliveColor;
 uniform ivec2 resolution;
 
 float random(vec2 st) {
@@ -13,9 +15,9 @@ void main() {
 //    imageStore(grid, pos, vec4(random(st)));
     ivec2 center = ivec2(resolution / 2);
     if (pos == (center + ivec2(1, 0)) || pos == (center + ivec2(2, 0)) || pos == (center + ivec2(0, 1)) || pos == (center + ivec2(1, 1)) || pos == (center + ivec2(1, 2))) {
-        imageStore(grid, pos, vec4(1.0));
+        imageStore(grid, pos, vec4(aliveColor, 1.0));
     }
     else {
-        imageStore(grid, pos, vec4(0.125));
+        imageStore(grid, pos, vec4(deadColor, 0.1));
     }
 }

@@ -140,10 +140,7 @@ public class Renderer implements Runnable {
     }
 
     public void destroy() {
-        displayShader.destroy();
-        Shader.deleteShader(display_vert);
-        Shader.deleteShader(display_geom);
-        Shader.deleteShader(display_frag);
+        displayShader.destroy().forEach(Shader::deleteShader);
         placeholder.destroy();
         System.out.println(displayPlane.destroy(0, 1).size());
         glfwFreeCallbacks(window);

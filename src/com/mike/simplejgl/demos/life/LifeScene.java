@@ -5,6 +5,7 @@ import com.mike.simplejgl.Utils;
 import com.mike.simplejgl.io.InputListener;
 import com.mike.simplejgl.rendering.Scene;
 import com.mike.simplejgl.rendering.shaders.ComputeShader;
+import com.mike.simplejgl.rendering.shaders.Shader;
 import com.mike.simplejgl.rendering.textures.Texture;
 import com.mike.simplejgl.vectors.*;
 import org.lwjgl.system.MemoryUtil;
@@ -35,8 +36,10 @@ public class LifeScene implements Scene, InputListener {
 
         init = new ComputeShader(Utils.getInternalFile("/com/mike/simplejgl/demos/life/init.glsl"), new Vector3i(8, 8, 1));
         display.bindImage(0, GL_READ_WRITE);
-        init.loadUniform("resolution", gridSize);
-        init.compute(new Vector3i(gridSize.x, gridSize.y, 1), GL_ALL_BARRIER_BITS);
+        init.loadUniform("deadColor", deadColor);
+        init.loadUniform("aliveColor", aliveColor);
+        init.loadUniform("resolution", new Vector2i(display.width, display.height));
+        init.compute(new Vector3i(display.width, display.height, 1), GL_ALL_BARRIER_BITS);
         init.unbind();
 
         this.deadColor = new Vector3f(deadColor);
@@ -49,6 +52,8 @@ public class LifeScene implements Scene, InputListener {
 
     public void restart() {
         display.bindImage(0, GL_READ_WRITE);
+        init.loadUniform("deadColor", deadColor);
+        init.loadUniform("aliveColor", aliveColor);
         init.loadUniform("resolution", new Vector2i(display.width, display.height));
         init.compute(new Vector3i(display.width, display.height, 1), GL_ALL_BARRIER_BITS);
         init.unbind();
@@ -99,6 +104,15 @@ public class LifeScene implements Scene, InputListener {
     @Override
     public Texture getDisplay() {
         return display;
+    }
+
+    @Override
+    public void destroy() {
+        display.destroy();
+        buffer.destroy();
+        shader.destroy().forEach(Shader::deleteShader);
+        init.destroy().forEach(Shader::deleteShader);
+        set.destroy().forEach(Shader::deleteShader);
     }
 
     public Vector3f getDeadColor() {

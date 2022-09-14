@@ -9,8 +9,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a12bcdcb-1d22-4e26-8cc1-918bdaba0db9" name="Changes" comment="The creation of the main functionality and 2 demos">
+    <list default="true" id="a12bcdcb-1d22-4e26-8cc1-918bdaba0db9" name="Changes" comment="Updated README.md">
+      <change afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/Demo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/Renderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/Renderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/demos/life/LifeScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/demos/life/LifeScene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/demos/life/init.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/demos/life/init.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/demos/mandelbrot/MandelbrotScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/demos/mandelbrot/MandelbrotScene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/rendering/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/rendering/Scene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/rendering/shaders/Shader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/rendering/shaders/Shader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +49,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/com/mike/simplejgl/Client.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/com/mike/simplejgl/Demo.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/com/mike/simplejgl/Renderer.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -83,9 +92,9 @@
       <recent name="C:\Users\mikem\IdeaProjects\MineClone\src\com\mike\mineclone\rendering" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Client">
-    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mike.simplejgl.Client" />
+  <component name="RunManager" selected="Application.Demo">
+    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mike.simplejgl.Demo" />
       <module name="SimpleJGL" />
       <extension name="coverage">
         <pattern>
@@ -102,12 +111,12 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.Client" />
+      <item itemvalue="Application.Demo" />
       <item itemvalue="JAR Application.MineClone.jar" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.Demo" />
         <item itemvalue="JAR Application.MineClone.jar" />
       </list>
     </recent_temporary>
@@ -128,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663176725857</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Updated README.md">
+      <created>1663177630391</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1663177630391</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -144,6 +160,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="The creation of the main functionality and 2 demos" />
-    <option name="LAST_COMMIT_MESSAGE" value="The creation of the main functionality and 2 demos" />
+    <MESSAGE value="Updated README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated README.md" />
   </component>
 </project>

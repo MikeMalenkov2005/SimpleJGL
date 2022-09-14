@@ -9,6 +9,8 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.Arrays;
+import java.util.List;
 
 import static org.lwjgl.opengl.GL45.*;
 
@@ -37,11 +39,12 @@ public class Shader {
     /**
      * Destroys the shader program.
      */
-    public void destroy() {
+    public List<Integer> destroy() {
         for (int attachedShader : attachedShaders) {
             glDetachShader(program, attachedShader);
         }
         glDeleteProgram(program);
+        return Arrays.stream(attachedShaders).boxed().toList();
     }
 
     public void bind() {
@@ -301,6 +304,6 @@ public class Shader {
     }
 
     public static void deleteShader(int shader) {
-        glDeleteShader(shader);
+        if (shader != 0) glDeleteShader(shader);
     }
 }
