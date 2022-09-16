@@ -12,6 +12,7 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.Buffer;
 import java.nio.ByteBuffer;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -110,8 +111,7 @@ public class Texture {
 
     public Texture(Vector3i size, int wrapMode, int filter, int levels, int internalFormat, int format, int data_type, long address) {
         this(size, wrapMode, filter, levels, internalFormat);
-
-        glTexImage3D(type, 0, internalFormat, size.x, size.y, size.z, 0, format, data_type, address);
+        glTextureSubImage3D(id, 0, 0, 0, 0, width, height, depth, format, data_type, address);
     }
 
     public Texture(Vector3i size, int wrapMode, int filter, int levels, int internalFormat, int format, int data_type, Buffer buffer) {
@@ -178,7 +178,7 @@ public class Texture {
         int[] pixels = new int[image.getWidth() * image.getHeight()];
         image.getRGB(0, 0, image.getWidth(), image.getHeight(), pixels, 0, image.getWidth());
         ByteBuffer buffer = BufferUtils.createByteBuffer(image.getWidth() * image.getHeight() * 4);
-        for (int y = 0; y < image.getHeight(); y++) {
+        for (int y = image.getHeight() - 1; y >= 0; y--) {
             for (int x = 0; x < image.getWidth(); x++) {
                 int pixel = pixels[y * image.getWidth() + x];
                 buffer.put((byte) ((pixel >> 16) & 0xFF));
@@ -188,7 +188,7 @@ public class Texture {
             }
         }
         buffer.flip();
-        return new Texture(new Vector2i(image.getWidth(), image.getHeight()), wrapMode, filter, levels, GL_RGBA8, GL_RGBA, GL_UNSIGNED_BYTE, buffer);
+        return new Texture(new Vector2i(image.getWidth(), image.getHeight()), wrapMode, filter, levels, GL_RGBA8, GL_RGBA, GL_UNSIGNED_BYTE, MemoryUtil.memAddress(buffer));
     }
 
     /**

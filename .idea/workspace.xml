@@ -9,17 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a12bcdcb-1d22-4e26-8cc1-918bdaba0db9" name="Changes" comment="Updated README.md">
-      <change afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/Demo.java" afterDir="false" />
+    <list default="true" id="a12bcdcb-1d22-4e26-8cc1-918bdaba0db9" name="Changes" comment="Changed shader destruction system.">
+      <change afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/demos/image/ImageScene.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/Demo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/Renderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/Renderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/demos/life/LifeScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/demos/life/LifeScene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/demos/life/init.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/demos/life/init.glsl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/demos/mandelbrot/MandelbrotScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/demos/mandelbrot/MandelbrotScene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/rendering/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/rendering/Scene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/rendering/shaders/Shader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/rendering/shaders/Shader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/rendering/textures/Texture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/rendering/textures/Texture.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663177630391</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Changed shader destruction system.">
+      <created>1663182232264</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1663182232264</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -161,6 +164,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="The creation of the main functionality and 2 demos" />
     <MESSAGE value="Updated README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated README.md" />
+    <MESSAGE value="Changed shader destruction system." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed shader destruction system." />
   </component>
 </project>

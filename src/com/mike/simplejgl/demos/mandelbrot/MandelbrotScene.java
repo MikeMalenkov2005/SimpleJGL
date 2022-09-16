@@ -16,16 +16,20 @@ import static org.lwjgl.glfw.GLFW.*;
 
 public class MandelbrotScene implements Scene, InputListener {
     private final Texture display;
-    private final Vector2i windowResolution;
+    private final Vector2i resolution;
     private final Runnable close;
+    private final float d;
+
     private final Vector3f coord = new Vector3f(0, 0, 1);
+    private final Vector2f mousePos = new Vector2f(0);
     private boolean drag = false;
     private int iterations;
 
     public MandelbrotScene(Renderer renderer, int iterations) {
-        windowResolution = renderer.getWindowResolution();
+        resolution = renderer.getWindowResolution();
+        d = Math.max(resolution.x, resolution.y);
         this.iterations = iterations;
-        this.display = new ColorTexture(windowResolution, new Vector4f(1));
+        this.display = new ColorTexture(resolution, new Vector4f(1));
         Shader.deleteShader(renderer.setPostprocessing(Shader.loadFragmentShader(Utils.getInternalFile("/com/mike/simplejgl/demos/mandelbrot/draw.frag")), (shader, display) -> {
             shader.loadUniform("u_resolution", new Vector2f(display.width, display.height));
             shader.loadUniform("u_time", (float) renderer.getTime());
@@ -76,15 +80,20 @@ public class MandelbrotScene implements Scene, InputListener {
 
     @Override
     public void mouseScrollEvent(double xScroll, double yScroll) {
-        coord.z *= Math.pow(1.1, -yScroll);
+        float scale = (float) Math.pow(1.1, -yScroll);
+        coord.x = mousePos.x + (coord.x - mousePos.x) * scale;
+        coord.y = mousePos.y + (coord.y - mousePos.y) * scale;
+        coord.z *= scale;
     }
 
     @Override
     public void mouseMoveEvent(double x, double y, double dx, double dy) {
         if (drag) {
-            float d = Math.max(windowResolution.x, windowResolution.y);
             coord.x -= dx * 4 * coord.z / d;
             coord.y += dy * 4 * coord.z / d;
+        } else {
+            mousePos.x = (float) ((x - resolution.x / 2.0) / d * 4 * coord.z + coord.x);
+            mousePos.y = (float) (-(y - resolution.y / 2.0) / d * 4 * coord.z + coord.y);
         }
     }
 }
