@@ -170,7 +170,7 @@ public class Renderer implements Runnable {
     public int setPostprocessing(int postprocessingFragmentShader, PostprocessingCallback postprocessingCallback) {
         int p = display_frag;
         if (postprocessingFragmentShader == 0) {
-            display_frag = Shader.loadFragmentShader(Utils.getInternalFileInputStream(getClass(), "/Kcom/mike/simplejgl/rendering/shaders/display.frag"));
+            display_frag = Shader.loadFragmentShader(Utils.getInternalFileInputStream(getClass(), "/com/mike/simplejgl/rendering/shaders/display.frag"));
             displayShader.destroy();
             displayShader = new Shader(display_vert, display_geom, display_frag);
             this.postProcessingCallback = postprocessingCallback;

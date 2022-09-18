@@ -9,15 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a12bcdcb-1d22-4e26-8cc1-918bdaba0db9" name="Changes" comment="Fixed loading texture from a file (it was flipping the y-axis).">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/MineClone_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="a12bcdcb-1d22-4e26-8cc1-918bdaba0db9" name="Changes" comment="Fixed loading internal files from a running jar.">
       <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/Renderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/Renderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/demos/life/LifeScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/demos/life/LifeScene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/demos/mandelbrot/MandelbrotScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/demos/mandelbrot/MandelbrotScene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/rendering/shaders/ComputeShader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/rendering/shaders/ComputeShader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/rendering/shaders/Shader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/rendering/shaders/Shader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663319410261</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Fixed loading internal files from a running jar.">
+      <created>1663488339788</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1663488339788</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -173,6 +173,7 @@
     <MESSAGE value="Updated README.md" />
     <MESSAGE value="Changed shader destruction system." />
     <MESSAGE value="Fixed loading texture from a file (it was flipping the y-axis)." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed loading texture from a file (it was flipping the y-axis)." />
+    <MESSAGE value="Fixed loading internal files from a running jar." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed loading internal files from a running jar." />
   </component>
 </project>
