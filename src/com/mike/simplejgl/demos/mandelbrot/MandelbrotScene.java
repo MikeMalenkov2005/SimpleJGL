@@ -30,7 +30,7 @@ public class MandelbrotScene implements Scene, InputListener {
         d = Math.max(resolution.x, resolution.y);
         this.iterations = iterations;
         this.display = new ColorTexture(resolution, new Vector4f(1));
-        Shader.deleteShader(renderer.setPostprocessing(Shader.loadFragmentShader(Utils.getInternalFile("/com/mike/simplejgl/demos/mandelbrot/draw.frag")), (shader, display) -> {
+        Shader.deleteShader(renderer.setPostprocessing(Shader.loadFragmentShader(Utils.getInternalFileInputStream(getClass(), "draw.frag")), (shader, display) -> {
             shader.loadUniform("u_resolution", new Vector2f(display.width, display.height));
             shader.loadUniform("u_time", (float) renderer.getTime());
             shader.loadUniform("coord", coord);

@@ -2,13 +2,12 @@ package com.mike.simplejgl;
 
 import org.lwjgl.BufferUtils;
 
-import java.io.File;
+import java.io.InputStream;
 import java.nio.*;
-import java.util.Objects;
 
 public class Utils {
-    public static File getInternalFile(String name) {
-        return new File(Objects.requireNonNull(Utils.class.getResource(name)).getFile());
+    public static <T> InputStream getInternalFileInputStream(Class<T> origin, String path) {
+        return origin.getResourceAsStream(path);
     }
 
     public static ByteBuffer createNativeBuffer(byte... arr) {

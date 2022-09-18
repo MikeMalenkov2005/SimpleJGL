@@ -3,6 +3,7 @@ package com.mike.simplejgl.rendering.shaders;
 import com.mike.simplejgl.vectors.Vector3i;
 
 import java.io.File;
+import java.io.InputStream;
 
 import static org.lwjgl.opengl.GL45.*;
 
@@ -16,8 +17,8 @@ public class ComputeShader extends Shader {
         this.local_size.z = Math.max(1, local_size.z);
     }
 
-    public ComputeShader(File shader, Vector3i local_size) {
-        this(loadComputeShader(shader), local_size);
+    public ComputeShader(InputStream source, Vector3i local_size) {
+        this(loadComputeShader(source), local_size);
     }
 
     /**

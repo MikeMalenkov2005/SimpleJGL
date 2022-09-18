@@ -2,20 +2,22 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="MineClone:jar" />
+      <artifact name="SimpleJGL:jar" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a12bcdcb-1d22-4e26-8cc1-918bdaba0db9" name="Changes" comment="Changed shader destruction system.">
-      <change afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/demos/image/ImageScene.java" afterDir="false" />
+    <list default="true" id="a12bcdcb-1d22-4e26-8cc1-918bdaba0db9" name="Changes" comment="Fixed loading texture from a file (it was flipping the y-axis).">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/MineClone_jar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/Demo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/Renderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/Renderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/demos/life/LifeScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/demos/life/LifeScene.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/demos/mandelbrot/MandelbrotScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/demos/mandelbrot/MandelbrotScene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/rendering/textures/Texture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/rendering/textures/Texture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/rendering/shaders/ComputeShader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/rendering/shaders/ComputeShader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/rendering/shaders/Shader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/rendering/shaders/Shader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,8 +70,9 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/mikem/IdeaProjects/SimpleJGL&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/mikem/IdeaProjects/SimpleJGL/out/artifacts/SimpleJGL_jar/SimpleJGL.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
@@ -88,7 +91,7 @@
       <recent name="C:\Users\mikem\IdeaProjects\MineClone\src\com\mike\mineclone\rendering" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Demo">
+  <component name="RunManager" selected="JAR Application.DemoJAR">
     <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mike.simplejgl.Demo" />
       <module name="SimpleJGL" />
@@ -102,18 +105,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MineClone.jar" type="JarApplication" temporary="true">
-      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/MineClone_jar/MineClone.jar" />
+    <configuration name="DemoJAR" type="JarApplication">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/SimpleJGL_jar/SimpleJGL.jar" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\mikem\IdeaProjects\SimpleJGL" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2" />
     </configuration>
-    <list>
-      <item itemvalue="Application.Demo" />
-      <item itemvalue="JAR Application.MineClone.jar" />
-    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Demo" />
-        <item itemvalue="JAR Application.MineClone.jar" />
       </list>
     </recent_temporary>
   </component>
@@ -147,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663182232264</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fixed loading texture from a file (it was flipping the y-axis).">
+      <created>1663319410261</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1663319410261</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -165,6 +172,7 @@
     <MESSAGE value="The creation of the main functionality and 2 demos" />
     <MESSAGE value="Updated README.md" />
     <MESSAGE value="Changed shader destruction system." />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed shader destruction system." />
+    <MESSAGE value="Fixed loading texture from a file (it was flipping the y-axis)." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed loading texture from a file (it was flipping the y-axis)." />
   </component>
 </project>

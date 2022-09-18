@@ -7,6 +7,7 @@ import com.mike.simplejgl.vectors.*;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Arrays;
@@ -235,68 +236,60 @@ public class Shader {
         loadUniform(name, arr);
     }
 
-    public static int loadVertexShader(File file) {
+    public static int loadVertexShader(InputStream inputStream) {
         try {
-            if (file.exists()) {
-                int id = glCreateShader(GL_VERTEX_SHADER);
-                glShaderSource(id, Files.readString(Paths.get(file.toURI())));
-                glCompileShader(id);
-                if (glGetShaderi(id, GL_COMPILE_STATUS) == GL_FALSE) {
-                    System.err.println("Error: Vertex Shader - " + glGetShaderInfoLog(id));
-                }
-                return id;
+            int id = glCreateShader(GL_VERTEX_SHADER);
+            glShaderSource(id, new String(inputStream.readAllBytes()));
+            glCompileShader(id);
+            if (glGetShaderi(id, GL_COMPILE_STATUS) == GL_FALSE) {
+                System.err.println("Error: Vertex Shader - " + glGetShaderInfoLog(id));
             }
+            return id;
         } catch (IOException ignored) {
 
         }
         return 0;
     }
 
-    public static int loadGeometryShader(File file) {
+    public static int loadGeometryShader(InputStream inputStream) {
         try {
-            if (file.exists()) {
-                int id = glCreateShader(GL_GEOMETRY_SHADER);
-                glShaderSource(id, Files.readString(Paths.get(file.toURI())));
-                glCompileShader(id);
-                if (glGetShaderi(id, GL_COMPILE_STATUS) == GL_FALSE) {
-                    System.err.println("Error: Geometry Shader - " + glGetShaderInfoLog(id));
-                }
-                return id;
+            int id = glCreateShader(GL_GEOMETRY_SHADER);
+            glShaderSource(id, new String(inputStream.readAllBytes()));
+            glCompileShader(id);
+            if (glGetShaderi(id, GL_COMPILE_STATUS) == GL_FALSE) {
+                System.err.println("Error: Geometry Shader - " + glGetShaderInfoLog(id));
             }
+            return id;
         } catch (IOException ignored) {
 
         }
         return 0;
     }
 
-    public static int loadFragmentShader(File file) {
+    public static int loadFragmentShader(InputStream inputStream) {
         try {
-            if (file.exists()) {
-                int id = glCreateShader(GL_FRAGMENT_SHADER);
-                glShaderSource(id, Files.readString(Paths.get(file.toURI())));
-                glCompileShader(id);
-                if (glGetShaderi(id, GL_COMPILE_STATUS) == GL_FALSE) {
-                    System.err.println("Error: Fragment Shader - " + glGetShaderInfoLog(id));
-                }
-                return id;
+            int id = glCreateShader(GL_FRAGMENT_SHADER);
+            glShaderSource(id, new String(inputStream.readAllBytes()));
+            glCompileShader(id);
+            if (glGetShaderi(id, GL_COMPILE_STATUS) == GL_FALSE) {
+                System.err.println("Error: Fragment Shader - " + glGetShaderInfoLog(id));
             }
+            return id;
         } catch (IOException ignored) {
 
         }
         return 0;
     }
 
-    public static int loadComputeShader(File file) {
+    public static int loadComputeShader(InputStream inputStream) {
         try {
-            if (file.exists()) {
-                int id = glCreateShader(GL_COMPUTE_SHADER);
-                glShaderSource(id, Files.readString(Paths.get(file.toURI())));
-                glCompileShader(id);
-                if (glGetShaderi(id, GL_COMPILE_STATUS) == GL_FALSE) {
-                    System.err.println("Error: Compute Shader - " + glGetShaderInfoLog(id));
-                }
-                return id;
+            int id = glCreateShader(GL_COMPUTE_SHADER);
+            glShaderSource(id, new String(inputStream.readAllBytes()));
+            glCompileShader(id);
+            if (glGetShaderi(id, GL_COMPILE_STATUS) == GL_FALSE) {
+                System.err.println("Error: Compute Shader - " + glGetShaderInfoLog(id));
             }
+            return id;
         } catch (IOException ignored) {
 
         }

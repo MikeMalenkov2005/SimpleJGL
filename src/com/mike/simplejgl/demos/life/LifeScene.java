@@ -8,7 +8,6 @@ import com.mike.simplejgl.rendering.shaders.ComputeShader;
 import com.mike.simplejgl.rendering.shaders.Shader;
 import com.mike.simplejgl.rendering.textures.Texture;
 import com.mike.simplejgl.vectors.*;
-import org.lwjgl.system.MemoryUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,12 +28,12 @@ public class LifeScene implements Scene, InputListener {
     private List<Vector3f> toSet = new ArrayList<>();
 
     public LifeScene(Renderer renderer, Vector2i gridSize, Vector3f deadColor, Vector3f aliveColor) {
-        set = new ComputeShader(Utils.getInternalFile("/com/mike/simplejgl/demos/life/set.glsl"), new Vector3i(1, 1, 1));
-        shader = new ComputeShader(Utils.getInternalFile("/com/mike/simplejgl/demos/life/life.glsl"), new Vector3i(8, 8, 1));
+        set = new ComputeShader(Utils.getInternalFileInputStream(getClass(), "set.glsl"), new Vector3i(1, 1, 1));
+        shader = new ComputeShader(Utils.getInternalFileInputStream(getClass(), "life.glsl"), new Vector3i(8, 8, 1));
         display = new Texture(gridSize, GL_REPEAT, GL_NEAREST, 1, GL_RGBA32F);
         buffer = new Texture(gridSize, GL_REPEAT, GL_NEAREST, 1, GL_RGBA32F);
 
-        init = new ComputeShader(Utils.getInternalFile("/com/mike/simplejgl/demos/life/init.glsl"), new Vector3i(8, 8, 1));
+        init = new ComputeShader(Utils.getInternalFileInputStream(getClass(), "init.glsl"), new Vector3i(8, 8, 1));
         display.bindImage(0, GL_READ_WRITE);
         init.loadUniform("deadColor", deadColor);
         init.loadUniform("aliveColor", aliveColor);
