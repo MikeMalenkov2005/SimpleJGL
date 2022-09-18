@@ -1,8 +1,8 @@
 package com.mike.simplejgl.rendering.textures;
 
 import com.mike.simplejgl.Utils;
-import com.mike.simplejgl.vectors.Vector2i;
-import com.mike.simplejgl.vectors.Vector3i;
+import org.joml.Vector2i;
+import org.joml.Vector3i;
 import org.lwjgl.BufferUtils;
 import org.lwjgl.system.MemoryUtil;
 
@@ -12,7 +12,6 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.Buffer;
 import java.nio.ByteBuffer;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 

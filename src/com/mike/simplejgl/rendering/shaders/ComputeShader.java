@@ -1,8 +1,7 @@
 package com.mike.simplejgl.rendering.shaders;
 
-import com.mike.simplejgl.vectors.Vector3i;
+import org.joml.Vector3i;
 
-import java.io.File;
 import java.io.InputStream;
 
 import static org.lwjgl.opengl.GL45.*;

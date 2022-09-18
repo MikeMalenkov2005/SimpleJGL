@@ -6,8 +6,8 @@ import com.mike.simplejgl.rendering.VBO;
 import com.mike.simplejgl.rendering.shaders.Shader;
 import com.mike.simplejgl.rendering.textures.ColorTexture;
 import com.mike.simplejgl.rendering.textures.Texture;
-import com.mike.simplejgl.vectors.Vector2i;
-import com.mike.simplejgl.vectors.Vector4f;
+import org.joml.Vector2i;
+import org.joml.Vector4f;
 import org.lwjgl.glfw.GLFWErrorCallback;
 import org.lwjgl.opengl.GL;
 

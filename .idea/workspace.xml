@@ -9,19 +9,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a12bcdcb-1d22-4e26-8cc1-918bdaba0db9" name="Changes" comment="Fixed loading internal files from a running jar.">
+    <list default="true" id="a12bcdcb-1d22-4e26-8cc1-918bdaba0db9" name="Changes" comment="Removed demos.">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/SimpleJGL_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/min_lwjgl_joml.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/Demo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleJGL.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleJGL.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/Renderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/Renderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/demos/image/ImageScene.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/demos/life/LifeScene.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/demos/life/init.glsl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/demos/life/life.glsl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/demos/life/set.glsl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/demos/mandelbrot/MandelbrotScene.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/demos/mandelbrot/draw.frag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/demos/raymarching/raymarch.glsl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/io/InputListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/InputListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/matricies/Matrix2f.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/matricies/Matrix3f.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/matricies/Matrix4f.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/rendering/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/rendering/Scene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/rendering/shaders/Shader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/rendering/shaders/Shader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/rendering/textures/ColorTexture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/rendering/textures/ColorTexture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/rendering/textures/Texture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/rendering/textures/Texture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/vectors/Vector2f.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/vectors/Vector2i.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/vectors/Vector3f.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/vectors/Vector3i.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/vectors/Vector4f.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/vectors/Vector4i.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,8 +81,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "jdk.selected.JAVA_MODULE": "openjdk-17",
-    "last_opened_file_path": "C:/Users/mikem/IdeaProjects/SimpleJGL/out/artifacts/SimpleJGL_jar/SimpleJGL.jar",
-    "project.structure.last.edited": "Artifacts",
+    "last_opened_file_path": "C:/Users/mikem/Desktop/libs/min_lwjgl+joml/lwjgl.jar",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.21954022"
   }
@@ -171,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663488569646</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Removed demos.">
+      <created>1663494624542</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1663494624542</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -191,6 +205,7 @@
     <MESSAGE value="Changed shader destruction system." />
     <MESSAGE value="Fixed loading texture from a file (it was flipping the y-axis)." />
     <MESSAGE value="Fixed loading internal files from a running jar." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed loading internal files from a running jar." />
+    <MESSAGE value="Removed demos." />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed demos." />
   </component>
 </project>

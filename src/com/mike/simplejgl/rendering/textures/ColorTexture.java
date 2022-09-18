@@ -1,8 +1,8 @@
 package com.mike.simplejgl.rendering.textures;
 
-import com.mike.simplejgl.vectors.Vector2i;
-import com.mike.simplejgl.vectors.Vector3i;
-import com.mike.simplejgl.vectors.Vector4f;
+import org.joml.Vector2i;
+import org.joml.Vector3i;
+import org.joml.Vector4f;
 import org.lwjgl.BufferUtils;
 import org.lwjgl.system.MemoryUtil;
 

@@ -1,0 +1,79 @@
+<component name="libraryTable">
+  <library name="min_lwjgl+joml">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/joml-1.10.5.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-assimp-natives-linux-arm32.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-assimp-natives-linux-arm64.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-assimp-natives-linux.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-assimp-natives-macos-arm64.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-assimp-natives-macos.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-assimp-natives-windows-arm64.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-assimp-natives-windows-x86.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-assimp-natives-windows.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-assimp.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-glfw-natives-linux-arm32.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-glfw-natives-linux-arm64.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-glfw-natives-linux.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-glfw-natives-macos-arm64.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-glfw-natives-macos.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-glfw-natives-windows-arm64.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-glfw-natives-windows-x86.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-glfw-natives-windows.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-glfw.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-natives-linux-arm32.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-natives-linux-arm64.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-natives-linux.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-natives-macos-arm64.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-natives-macos.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-natives-windows-arm64.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-natives-windows-x86.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-natives-windows.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-openal-natives-linux-arm32.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-openal-natives-linux-arm64.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-openal-natives-linux.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-openal-natives-macos-arm64.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-openal-natives-macos.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-openal-natives-windows-arm64.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-openal-natives-windows-x86.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-openal-natives-windows.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-openal.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-opengl-natives-linux-arm32.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-opengl-natives-linux-arm64.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-opengl-natives-linux.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-opengl-natives-macos-arm64.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-opengl-natives-macos.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-opengl-natives-windows-arm64.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-opengl-natives-windows-x86.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-opengl-natives-windows.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-opengl.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-stb-natives-linux-arm32.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-stb-natives-linux-arm64.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-stb-natives-linux.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-stb-natives-macos-arm64.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-stb-natives-macos.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-stb-natives-windows-arm64.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-stb-natives-windows-x86.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-stb-natives-windows.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-stb.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-assimp-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-glfw-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-openal-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-opengl-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-stb-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/joml-1.10.5-sources.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/joml-1.10.5-sources.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-assimp-sources.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-glfw-sources.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-openal-sources.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-opengl-sources.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-sources.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/libs/min_lwjgl+joml/lwjgl-stb-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
