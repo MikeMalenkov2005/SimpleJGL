@@ -10,7 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a12bcdcb-1d22-4e26-8cc1-918bdaba0db9" name="Changes" comment="Fixed loading internal files from a running jar.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/Demo.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/Renderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/Renderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/demos/image/ImageScene.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/demos/life/LifeScene.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/demos/life/init.glsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/demos/life/life.glsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/demos/life/set.glsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/demos/mandelbrot/MandelbrotScene.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/demos/mandelbrot/draw.frag" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/demos/raymarching/raymarch.glsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mike/simplejgl/io/InputListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mike/simplejgl/InputListener.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +51,6 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/com/mike/simplejgl/Demo.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/com/mike/simplejgl/Renderer.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -54,22 +64,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/mikem/IdeaProjects/SimpleJGL/out/artifacts/SimpleJGL_jar/SimpleJGL.jar&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "jdk.selected.JAVA_MODULE": "openjdk-17",
+    "last_opened_file_path": "C:/Users/mikem/IdeaProjects/SimpleJGL/out/artifacts/SimpleJGL_jar/SimpleJGL.jar",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.21954022"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.mike.mineclone.rendering.textures" />
@@ -154,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663488339788</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Fixed loading internal files from a running jar.">
+      <created>1663488569646</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1663488569646</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

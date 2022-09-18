@@ -1,4 +1,4 @@
-package com.mike.simplejgl.io;
+package com.mike.simplejgl;
 
 public interface InputListener {
     /**

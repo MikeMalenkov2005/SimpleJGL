@@ -1,6 +1,5 @@
 package com.mike.simplejgl;
 
-import com.mike.simplejgl.io.InputListener;
 import com.mike.simplejgl.rendering.Scene;
 import com.mike.simplejgl.rendering.VAO;
 import com.mike.simplejgl.rendering.VBO;
