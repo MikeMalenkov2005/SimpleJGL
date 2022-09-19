@@ -2,6 +2,7 @@ package com.mike.simplejgl.rendering.shaders;
 
 import org.joml.Vector3i;
 
+import java.io.IOException;
 import java.io.InputStream;
 
 import static org.lwjgl.opengl.GL45.*;
@@ -16,7 +17,7 @@ public class ComputeShader extends Shader {
         this.local_size.z = Math.max(1, local_size.z);
     }
 
-    public ComputeShader(InputStream source, Vector3i local_size) {
+    public ComputeShader(InputStream source, Vector3i local_size) throws IOException {
         this(loadComputeShader(source), local_size);
     }
 
