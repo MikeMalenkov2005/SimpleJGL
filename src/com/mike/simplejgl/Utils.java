@@ -2,14 +2,9 @@ package com.mike.simplejgl;
 
 import org.lwjgl.BufferUtils;
 
-import java.io.InputStream;
 import java.nio.*;
 
 public class Utils {
-    public static <T> InputStream getInternalFileInputStream(Class<T> origin, String path) {
-        return origin.getResourceAsStream(path);
-    }
-
     public static ByteBuffer createNativeBuffer(byte... arr) {
         ByteBuffer buffer = BufferUtils.createByteBuffer(arr.length);
         for (byte e : arr) {
@@ -63,30 +58,15 @@ public class Utils {
     }
 
     public static double roll(double v, double min, double max) {
-        double vv = v;
-        double d = max - min;
-        if (d <= 0) return 0;
-        while (vv > max) vv -= d;
-        while (vv < min) vv += d;
-        return vv;
+        return min + ((v - min) % (max - min));
     }
 
     public static float roll(float v, float min, float max) {
-        float vv = v;
-        float d = max - min;
-        if (d <= 0) return 0;
-        while (vv > max) vv -= d;
-        while (vv < min) vv += d;
-        return vv;
+        return min + ((v - min) % (max - min));
     }
 
     public static int roll(int v, int min, int max) {
-        int vv = v;
-        int d = max - min;
-        if (d <= 0) return 0;
-        while (vv > max) vv -= d;
-        while (vv < min) vv += d;
-        return vv;
+        return min + ((v - min) % (max - min));
     }
 
     public static double pong(double v, double min, double max) {

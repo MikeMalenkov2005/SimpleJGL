@@ -11,7 +11,10 @@ import org.joml.Vector4f;
 import org.lwjgl.glfw.GLFWErrorCallback;
 import org.lwjgl.opengl.GL;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.io.PrintStream;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -33,6 +36,7 @@ public class Renderer implements Runnable {
     private final long window;
     private long monitor;
 
+    private final URL displayFragDefaultURL;
     private final int display_vert, display_geom;
     private int display_frag;
     private Shader displayShader;
@@ -87,10 +91,30 @@ public class Renderer implements Runnable {
         displayPlane.setVBO(0, new VBO(GL_STATIC_DRAW, -1f, -1f, 0f, -1f, 1f, 0f, 1f, 1f, 0f, 1f, -1f, 0f), GL_FLOAT, 3, false);
         displayPlane.setVBO(1, new VBO(GL_STATIC_DRAW, 0f, 0f, 0f, 1f, 1f, 1f, 1f, 0f), GL_FLOAT, 2, false);
 
-        display_vert = Shader.loadVertexShader(Utils.getInternalFileInputStream(getClass(), "/com/mike/simplejgl/rendering/shaders/display.vert"));
-        display_geom = Shader.loadGeometryShader(Utils.getInternalFileInputStream(getClass(), "/com/mike/simplejgl/rendering/shaders/display.geom"));
-        display_frag = Shader.loadFragmentShader(Utils.getInternalFileInputStream(getClass(), "/com/mike/simplejgl/rendering/shaders/display.frag"));
+        int display_vert1;
+        try (InputStream dvin = getClass().getResourceAsStream("/com/mike/simplejgl/rendering/shaders/display.vert")) {
+            display_vert1 = dvin == null ? 0 : Shader.loadVertexShader(dvin);
+        } catch (IOException ignored) {
+            display_vert1 = 0;
+        }
+        display_vert = display_vert1;
+        int display_geom1;
+        try (InputStream dgin = getClass().getResourceAsStream("/com/mike/simplejgl/rendering/shaders/display.geom")) {
+            display_geom1 = dgin == null ? 0 : Shader.loadVertexShader(dgin);
+        } catch (IOException ignored) {
+            display_geom1 = 0;
+        }
+        display_geom = display_geom1;
+        displayFragDefaultURL = getClass().getResource("/com/mike/simplejgl/rendering/shaders/display.frag");
+        if (displayFragDefaultURL != null) {
+            try (InputStream dfin = displayFragDefaultURL.openStream()) {
+                display_frag = Shader.loadFragmentShader(dfin);
+            } catch (IOException e) {
+                display_frag = 0;
+            }
+        } else display_frag = 0;
         displayShader = new Shader(display_vert, display_geom, display_frag);
+
         placeholder = new ColorTexture(getWindowResolution(), new Vector4f(1, 1, 1, 1));
         this.renderDepth = renderDepth;
     }
@@ -169,7 +193,13 @@ public class Renderer implements Runnable {
     public int setPostprocessing(int postprocessingFragmentShader, PostprocessingCallback postprocessingCallback) {
         int p = display_frag;
         if (postprocessingFragmentShader == 0) {
-            display_frag = Shader.loadFragmentShader(Utils.getInternalFileInputStream(getClass(), "/com/mike/simplejgl/rendering/shaders/display.frag"));
+            if (displayFragDefaultURL != null) {
+                try (InputStream dfin = displayFragDefaultURL.openStream()) {
+                    display_frag = Shader.loadFragmentShader(dfin);
+                } catch (IOException ignored) {
+                    display_frag = 0;
+                }
+            } else display_frag = 0;
             displayShader.destroy();
             displayShader = new Shader(display_vert, display_geom, display_frag);
             this.postProcessingCallback = postprocessingCallback;

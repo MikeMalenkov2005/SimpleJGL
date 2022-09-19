@@ -255,64 +255,48 @@ public class Shader {
         loadUniform(uniformName, new Vector4i(x ? 1 : 0, y ? 1 : 0, z ? 1 : 0, w ? 1 : 0));
     }
 
-    public static int loadVertexShader(InputStream inputStream) {
-        try {
-            int id = glCreateShader(GL_VERTEX_SHADER);
-            glShaderSource(id, new String(inputStream.readAllBytes()));
-            glCompileShader(id);
-            if (glGetShaderi(id, GL_COMPILE_STATUS) == GL_FALSE) {
-                System.err.println("Error: Vertex Shader - " + glGetShaderInfoLog(id));
-            }
-            return id;
-        } catch (IOException ignored) {
-
+    public static int loadVertexShader(InputStream inputStream) throws IOException {
+        String src = new String(inputStream.readAllBytes());
+        int id = glCreateShader(GL_VERTEX_SHADER);
+        glShaderSource(id, src);
+        glCompileShader(id);
+        if (glGetShaderi(id, GL_COMPILE_STATUS) == GL_FALSE) {
+            System.err.println("Error: Vertex Shader - " + glGetShaderInfoLog(id));
         }
-        return 0;
+        return id;
     }
 
-    public static int loadGeometryShader(InputStream inputStream) {
-        try {
-            int id = glCreateShader(GL_GEOMETRY_SHADER);
-            glShaderSource(id, new String(inputStream.readAllBytes()));
-            glCompileShader(id);
-            if (glGetShaderi(id, GL_COMPILE_STATUS) == GL_FALSE) {
-                System.err.println("Error: Geometry Shader - " + glGetShaderInfoLog(id));
-            }
-            return id;
-        } catch (IOException ignored) {
-
+    public static int loadGeometryShader(InputStream inputStream) throws IOException {
+        String src = new String(inputStream.readAllBytes());
+        int id = glCreateShader(GL_GEOMETRY_SHADER);
+        glShaderSource(id, src);
+        glCompileShader(id);
+        if (glGetShaderi(id, GL_COMPILE_STATUS) == GL_FALSE) {
+            System.err.println("Error: Geometry Shader - " + glGetShaderInfoLog(id));
         }
-        return 0;
+        return id;
     }
 
-    public static int loadFragmentShader(InputStream inputStream) {
-        try {
-            int id = glCreateShader(GL_FRAGMENT_SHADER);
-            glShaderSource(id, new String(inputStream.readAllBytes()));
-            glCompileShader(id);
-            if (glGetShaderi(id, GL_COMPILE_STATUS) == GL_FALSE) {
-                System.err.println("Error: Fragment Shader - " + glGetShaderInfoLog(id));
-            }
-            return id;
-        } catch (IOException ignored) {
-
+    public static int loadFragmentShader(InputStream inputStream) throws IOException {
+        String src = new String(inputStream.readAllBytes());
+        int id = glCreateShader(GL_FRAGMENT_SHADER);
+        glShaderSource(id, src);
+        glCompileShader(id);
+        if (glGetShaderi(id, GL_COMPILE_STATUS) == GL_FALSE) {
+            System.err.println("Error: Fragment Shader - " + glGetShaderInfoLog(id));
         }
-        return 0;
+        return id;
     }
 
-    public static int loadComputeShader(InputStream inputStream) {
-        try {
-            int id = glCreateShader(GL_COMPUTE_SHADER);
-            glShaderSource(id, new String(inputStream.readAllBytes()));
-            glCompileShader(id);
-            if (glGetShaderi(id, GL_COMPILE_STATUS) == GL_FALSE) {
-                System.err.println("Error: Compute Shader - " + glGetShaderInfoLog(id));
-            }
-            return id;
-        } catch (IOException ignored) {
-
+    public static int loadComputeShader(InputStream inputStream) throws IOException {
+        String src = new String(inputStream.readAllBytes());
+        int id = glCreateShader(GL_COMPUTE_SHADER);
+        glShaderSource(id, src);
+        glCompileShader(id);
+        if (glGetShaderi(id, GL_COMPILE_STATUS) == GL_FALSE) {
+            System.err.println("Error: Compute Shader - " + glGetShaderInfoLog(id));
         }
-        return 0;
+        return id;
     }
 
     public static void deleteShader(int shader) {
