@@ -100,7 +100,7 @@ public class Renderer implements Runnable {
         display_vert = display_vert1;
         int display_geom1;
         try (InputStream dgin = getClass().getResourceAsStream("/com/mike/simplejgl/rendering/shaders/display.geom")) {
-            display_geom1 = dgin == null ? 0 : Shader.loadVertexShader(dgin);
+            display_geom1 = dgin == null ? 0 : Shader.loadGeometryShader(dgin);
         } catch (IOException ignored) {
             display_geom1 = 0;
         }
