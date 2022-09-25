@@ -4,4 +4,4 @@ SimpleJGL is an easy-to-use java game library with simple interface.
 SimpleJGL uses OpenGL 4.5 to display graphics.
 It supports buffer objects, vertex array objects, textures and shaders of all kinds.
 ## Download
-[SimpleJGL.jar](bin/SimpleJGL.jar?raw=true)
+Latest build: [SimpleJGL.jar](bin/SimpleJGL.jar?raw=true)
